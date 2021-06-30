@@ -1,10 +1,17 @@
-import {GlobalStyle} from '../globalStyle/globalStyle'
+import { GlobalStyle } from '../globalStyle/globalStyle'
+import Header from '../components/Header/Header'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+
 
 function MyApp({ Component, pageProps }) {
-  return ( 
+  return (
     <>
-    <GlobalStyle/>
-    <Component {...pageProps}/>
+      <GlobalStyle />
+      <Header />
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
